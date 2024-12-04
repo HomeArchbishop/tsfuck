@@ -24,7 +24,7 @@ export const MoveTest: Test<[
 
   // >>
   IsExtends<GetTape<TuringMachineRightMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>,
-    [TestIntZero, TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineRightMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>, TestIntArgThree>,
   IsExtends<GetPtr<TuringMachineRightMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>, TestIntArgTwo>,
 
@@ -35,31 +35,31 @@ export const MoveTest: Test<[
 
   // <<
   IsExtends<GetTape<TuringMachineLeftMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>,
-    [TestIntZero, TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineLeftMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>, TestIntArgThree>,
   IsExtends<GetPtr<TuringMachineLeftMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>, TestIntArgZero>,
 
   // <>
   IsExtends<GetTape<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>,
-    [TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>, TestIntArgTwo>,
   IsExtends<GetPtr<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>, TestIntArgOne>,
 
   // ><
   IsExtends<GetTape<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>,
-    [TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>, TestIntArgTwo>,
   IsExtends<GetPtr<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>, TestIntArgZero>,
 
   // <><
   IsExtends<GetTape<TuringMachineLeftMove<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>>,
-    [TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineLeftMove<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>>, TestIntArgTwo>,
   IsExtends<GetPtr<TuringMachineLeftMove<TuringMachineRightMove<TuringMachineLeftMove<InitialTuringMachine<Int4Length>>>>>, TestIntArgZero>,
 
   // ><>
   IsExtends<GetTape<TuringMachineRightMove<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>>,
-    [TestIntZero, TestIntZero]>,
+  [TestIntZero, TestIntZero]>,
   IsExtends<GetCap<TuringMachineRightMove<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>>, TestIntArgTwo>,
   IsExtends<GetPtr<TuringMachineRightMove<TuringMachineLeftMove<TuringMachineRightMove<InitialTuringMachine<Int4Length>>>>>, TestIntArgOne>
 ]> = true
