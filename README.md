@@ -7,13 +7,13 @@ a tiny brainfuck interpreter by TypeScript type system.
 ## Try it
 
 ```sh
-npm i tsfuck
+npm i tsfxxk
 # or
-yarn add tsfuck
+yarn add tsfxxk
 ```
 
 ```ts
-import type { Tsfuck } from 'tsfuck'
+import type { Tsfuck } from 'tsfxxk'
 
 type Output = Tsfuck<',+.', 'a'> // extends 'b'
 ```
