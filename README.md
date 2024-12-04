@@ -1,6 +1,8 @@
-<h1>
-Tsfuck - a tiny brainfuck interpreter built with the TypeScript type system
-</h1>
+# Tsfuck
+
+a tiny brainfuck interpreter by TypeScript type system.
+
+一个用 TS 类型体操写成的 Brainfuck 解释器
 
 ## Try it
 
@@ -18,7 +20,7 @@ type Output = Tsfuck<',+.', 'a'> // extends 'b'
 
 ## Usage
 
-tsfuck provides a type for entry:
+Tsfuck provides an entry type:
 
 ```ts
 type Tsfuck <ProgramString extends string, InputString extends string>
