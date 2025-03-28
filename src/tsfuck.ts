@@ -65,7 +65,7 @@ type Excute<
   OUT extends ASCIIChar[] = [],
   TM extends TuringMachine = InitialTuringMachine<TSFUCK_ARCH>,
   LOOPSKIP extends any[] = [],
-  LOOPBACK extends number[] = [],
+  LOOPBACK extends any[] = [],
 > = PTR['length'] extends P['length']
   ? OUT
   : (LOOPSKIP['length'] extends 0 ? true : false) extends false /* Skipping loop */
